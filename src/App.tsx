@@ -15,17 +15,17 @@ function App() {
   console.log(add2(5, 6));
 
 
-  // funkcję countCharacters liczącą ilość znaków w stringu
+  // funkcję countCharacters liczącą ilość znaków w stringu; funckja ma zwracać ilość
   const countCharacters = (str: string): number => str.length;
 
   // funkcję isEven mówiącą czy liczba jest parzysta czy nie (zwracająca boolean)
   const isEven = (num: number): boolean => num % 2 === 0;
 
-  // funkcję getParityMessage która na podstawie boolean zwraca komunikat ta liczba jest parzysta/ta liczba nie jest parzysta
+  // funkcję getParityMessage która na podstawie boolean zwraca komunikat ta liczba jest parzysta/ta liczba nie jest parzysta; 
   function getParityMessage(isEven: boolean): string {
     return isEven ? "Ta liczba jest parzysta" : "Ta liczba nie jest parzysta";
   }
-  
+
   // funkcję processString która na podstawie stringa, wypisuje go, wypisuje liczbę jego znaków oraz informację czy liczba znaków jest/nie jest parzysta. Funkcja ta powinna wywoływać 3 powyższe funkcje (zwraca string)
 
   const processString = (str: string): string => {
