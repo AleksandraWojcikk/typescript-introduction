@@ -33,6 +33,7 @@ lastName?: string;
 age?: number;
 address?: Address;
 getFullName?: () => string;
+id: number;
 }
 
 interface Address {
@@ -50,6 +51,7 @@ const person: Person = {
         street: 'Kolorowa 33',
         city: 'Wrocław',
     },
+    id: 1,
     getFullName () {
         return `${this.firstName} ${this.lastName}`; 
 }
@@ -62,6 +64,7 @@ console.log(person.age);
 const person2: Person = {
     firstName: 'Karolina',
     age: 23,
+    id: 2,
     
     
 }
@@ -87,7 +90,7 @@ const Exercise3 = () => {
         <div>
             {people.map(person => {
                 return (
-                    <div className='person-card'>
+                    <div className='person-card' key={person.id}>
                         <p>Name: {person.firstName}</p>
                         <p>Age: {person.age}</p>
                         {/* warunek, na podstawie którego określamy, czy coś się wyświetla czy nie. W tym przypadku, jeśli dana osoba ma wpisany jakis adres, to coś z tego adresu się wyświetli; jeśli nei ma wpisanych danych o adresie, to ten Country w ogóle się nie wyświetli */}
