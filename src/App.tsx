@@ -4,6 +4,18 @@ import { Exercise2 } from "./Exercises/Exercise2";
 import { Exercise3 } from "./Exercises/Exercise3";
 import { Exercise4 } from "./Exercises/Exercise4";
 
+// Summary
+// Type number - const num: number = 10;
+// Type string - const str: string = '10';
+// Type boolean - const bool: boolean = true;
+// Arrays -  Array<boolean>
+// Objects - interface User { name: string; } lub type User = { name: string; }
+// Promises - Promise<Type>
+// Generics - getFirstElement<T>(array: Array<T>): T
+// Utlility/Partial - Partial<T>
+// Utlility/Readonly - Readonly<T>
+// Utlility/Record - Record<Key,Type>
+
 function App() {
 return(
   <>
