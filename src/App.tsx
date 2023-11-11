@@ -2,6 +2,7 @@ import "./App.css";
 import { Exercise1 } from "./Exercises/Exercise1";
 import { Exercise2 } from "./Exercises/Exercise2";
 import { Exercise3 } from "./Exercises/Exercise3";
+import { Exercise4 } from "./Exercises/Exercise4";
 
 function App() {
 return(
@@ -12,6 +13,8 @@ return(
   <Exercise2 />
   <br />
   <Exercise3 />
+  <br />
+  <Exercise4 />
   </>
 )
 
