@@ -21,8 +21,12 @@ const isEven = (num: number) => num % 2 === 0;
 const getParityMessage = (isEven: boolean): string => isEven ? 'ta liczba jest parzysta' : 'ta liczba jest nieparzysta';
 
 
+// Zmień argument funkcji processString na opcjonalny, w przypadku braku argumentu funkcja zwraca string 'Nie podano argumentu'
 
-const processString = (str: string): string => {
+const processString = (str?: string): string => {
+if(!str) {
+    return str?.length === 0 ? 'Pusty string' : 'Nie podano argumentu';
+}
 const strLength = countCharacters(str);
 const strIsEvenInfo = getParityMessage(isEven(strLength));
 
@@ -44,6 +48,8 @@ const Exercise1 = () => {
             <li>{isEven(countCharacters('Kasia')).toString()}</li>
             
             <li>{processString('Andrzej')}</li>
+            <li>{processString()}</li>
+            <li>{processString('')}</li>
         </ol>
         </>
     );
